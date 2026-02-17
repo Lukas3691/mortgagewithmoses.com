@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage With Moses | Your Trusted Mortgage Broker in Edmonton</title>
+    <meta name="description" content="Get personalized mortgage solutions with Moses Lam, your trusted mortgage broker in Edmonton, Alberta. First-time buyers, refinancing, and investment properties.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1e3a5f;
+            --secondary: #2d5a87;
+            --accent: #c9a227;
+            --light: #f8f9fa;
+            --dark: #212529;
+        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: var(--primary); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: white; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+        
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; padding: 150px 0 100px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.25rem; margin-bottom: 30px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .cta-btn { background: var(--accent); color: var(--primary); padding: 15px 40px; border: none; font-size: 1.1rem; font-weight: 600; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        
+        /* Services */
+        .services { padding: 80px 0; background: var(--light); }
+        .section-title { text-align: center; font-size: 2.5rem; margin-bottom: 50px; color: var(--primary); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background: white; padding: 40px 30px; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card h3 { color: var(--primary); margin: 20px 0 15px; font-size: 1.5rem; }
+        .service-icon { font-size: 3rem; }
+        
+        /* About */
+        .about { padding: 80px 0; }
+        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-text h2 { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
+        .about-text p { margin-bottom: 15px; color: #555; }
+        .about-image { background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 10px; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; }
+        
+        /* Contact */
+        .contact { padding: 80px 0; background: var(--primary); color: white; }
+        .contact .section-title { color: white; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h3 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent); }
+        .contact-info p { margin-bottom: 15px; opacity: 0.9; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 5px; font-family: inherit; }
+        .contact-form textarea { height: 150px; resize: vertical; }
+        .contact-form button { width: 100%; }
+        
+        /* Footer */
+        footer { background: #0d1b2a; color: white; padding: 40px 0; text-align: center; }
+        footer p { opacity: 0.7; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .about-content, .contact-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Mortgage<span>WithMoses</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Path to Homeownership Starts Here</h1>
+            <p>Expert mortgage guidance tailored to your unique financial situation. Let Moses help you find the perfect mortgage solution in Edmonton and across Alberta.</p>
+            <a href="#contact" class="cta-btn">Get Your Free Consultation</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>First-Time Home Buyers</h3>
+                    <p>Navigate the home buying process with confidence. We'll help you understand your options and find the best rates.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Refinancing</h3>
+                    <p>Lower your payments, access home equity, or consolidate debt. Discover how refinancing can work for you.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Investment Properties</h3>
+                    <p>Expand your portfolio with competitive financing options for rental and investment properties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Meet Moses Lam</h2>
+                    <p>With years of experience in the mortgage industry, Moses Lam has helped hundreds of families achieve their dream of homeownership in Edmonton and throughout Alberta.</p>
+                    <p>As your dedicated mortgage broker, Moses works with multiple lenders to find you the best rates and terms that fit your unique situation. Whether you're a first-time buyer, looking to refinance, or investing in property, you'll receive personalized service every step of the way.</p>
+                    <p><strong>Licensed Mortgage Broker | Artisan Mortgages</strong></p>
+                </div>
+                <div class="about-image">Moses Lam<br>Mortgage Broker</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>📍 Edmonton, Alberta, Canada</p>
+                    <p>📧 moses@artisanmortgages.ca</p>
+                    <p>📱 Contact for phone number</p>
+                    <h3 style="margin-top: 30px;">Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: By Appointment</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone">
+                    <textarea placeholder="Tell us about your mortgage needs..."></textarea>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mortgage With Moses | Artisan Mortgages. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
